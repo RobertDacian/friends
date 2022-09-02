@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev Squid | Home Page</title>
+    <title>Dev Squid | Profile Page</title>
     <link rel="stylesheet" href="/dist/css/main.css" />
   </head>
 
   <body>
 
-    <!-- Navbar -->
+     <!-- Navbar -->
     <header>
       <nav class="navbar navbar-transparent navbar-expand-lg pt-lg-4 pt-md-4 pt-2">
         <div class="container-lg">
@@ -18,7 +18,7 @@
             ><img src="/assets/brand/dev.squid.svg" alt=""/></a>   
           <ul class="navbar-nav navbar-right-wrap d-lg-none ms-auto me-0">
             <li class="nav-item">
-                <a class="nav-link" href="/profile/">Profile</a>
+                <a class="nav-link active" href="/profile/">Profile</a>
             </li>           
             <li class="nav-item">
                 <a class="nav-link" href="/sign-in/">Account</a>
@@ -71,93 +71,197 @@
       </nav>
     </header>
 
-   <!-- Hero Section -->
-    <section class=" hero bg-transparent pt-8 pb-8 ">
+    <!-- Content -->
+    <section class="profile-hero pt-lg-8 pb-0 pt-md-8  pt-4 ">
       <div class="container-lg">
-        <div class="row flex-lg-row align-items-center flex-md-column-reverse  ">
-          <div class="col-xl-5 col-lg-6 col-md-12 order-sm-first order-last ">
-            <div class="py-5 ">
-              <h1 class="text-dark display-1 fw-bold">Welcome to Dev Squid Learning</h1>
-              <p class=" mb-4 lead ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, rerum.
-              </p>
-              <div class="btn-group flex-wrap gap-3 ">
-                <a href="#" class="btn btn-primary rounded">Browse Courses</a>
-                <a href="/sign-in/" class="btn btn-white rounded">Get Started</a>
+        <!-- Hero Section -->
+        <div class="row">
+          <div class="col-12">
+            <!-- Hero Card -->
+            <div class="profile-bg">
+              <img src="/assets/images/profile-bg.jpg" class="profile-bg-img rounded-top"  alt="Background image">
+            </div>
+            <div
+              class="d-flex flex-wrap align-items-end justify-content-between gap-4 bg-white px-4 py-4 rounded-bottom shadow-sm"
+            >
+              <div class="d-flex align-items-center">
+                <div
+                  class="me-2"
+                >
+                  <img
+                    src="/assets/avatars/img_me.jpg"
+                    class="avatar-lg rounded-circle "
+                    alt=""
+                  />
+                </div>
+                <div class="d-block">
+                  <h2 class="mb-0">Robert D.B</h2>
+                  <p class="mb-0 ">@RobertDacian</p>
+                </div>
+              </div>
+              <div>
+                 <!-- Modal Button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#postModal">
+                Create Post
+                </button>
               </div>
             </div>
-          </div>
-          <div class="col-xl-7 col-lg-6 col-md-12 ">
-            <img src="assets/images/hero-img-removebg-preview.png" alt="Here image with modern technology" class="img-fluid" />
           </div>
         </div>
-        <!-- Features Section -->
-        <div class="bg-white py-4 mt-5 shadow-sm rounded">
-          <div class="row align-items-center g-2">
-          <!-- Features -->
-          <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-4">
-            <div class="d-flex align-items-center justify-content-start ms-4">
-              <div class="ms-0">
-                <h3 class="mb-0 fw-semi-bold">Lot's of online courses</h3>
-              <p class="mb-0 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <!-- Page Content -->
+        <div class="row mt-4">
+          <div class="col-lg-3 col-md-4 col-12">
+            <!-- Side Page Nav -->
+            <nav class="navbar navbar-expand-md d-flex justify-content-end bg-white shadow-sm mb-0  pe-4 py-3 sidenav">
+              <!-- Nav Menu -->
+              <h3 class="d-xl-none d-lg-none d-md-none mb-0 me-2">Menu</h3>
+              <!-- Hamburger Button -->
+              <button
+                class="navbar-toggler d-md-none rounded bg-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#sidenav"
+                aria-controls="sidenav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <img src="/assets/svg/filter-circle-fill.svg" class="text-white"></img>
+              </button>
+              <!-- Nav Collapse -->
+              <div class="collapse navbar-collapse" id="sidenav">
+                <div class="navbar-nav flex-column ms-4">
+                  <!-- Nav Menu Title -->
+                  <spam class="navbar-header fw-bold mb-0">Navigation Menu</spam>
+                  <!-- Nav Items -->
+                  <ul class="list-unstyled  mb-4">   
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                      <a class="nav-link active" href="/profile/">Edit Profile</a>
+                    </li>         
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile/my-posts.html">Posts</a>
+                    </li>                 
+                  </ul>
+                  <!-- Nav Menu Title -->
+                  <spam class="navbar-header fw-bold mb-0">Account Settings</spam>
+                  <!-- Nav Items -->
+                  <ul class="list-unstyled ms-n2 mb-0">
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile/profile-security.html"
+                        ><i class="fe fe-user nav-icon"></i>Security</a
+                      >
+                    </li>
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile/social-profiles.html"
+                        ><i class="fe fe-refresh-cw nav-icon"></i>Social Profiles</a
+                      >
+                    </li>
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile/profile-notifications.html"
+                        ><i class="fe fe-bell nav-icon"></i>Notifications</a
+                      >
+                    </li>
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile/profile-privacy.html"
+                        ><i class="fe fe-lock nav-icon"></i>Profile Privacy</a
+                      >
+                    </li>
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/profile/delete-profile.html"
+                        ><i class="fe fe-trash nav-icon"></i>Delete Profile</a
+                      >
+                    </li>
+                    <!-- Nav item -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/"
+                        ><i class="fe fe-power nav-icon"></i>Sign Out</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
+            </nav>
           </div>
-          <!-- Features -->
-          <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-4">
-            <div class="d-flex align-items-center justify-content-start ms-4">
-             <div class="ms-0">
-                <h3 class="mb-0 fw-semi-bold">Expert teachers</h3>
-                <p class="mb-0 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-             </div>
-            </div>
-          </div>
-          <!-- Features -->
-          <div class="col-xl-4 col-lg-4 col-md-6 mb-lg ">
-            <div class="d-flex align-items-center justify-content-start ms-4">
-              <div class="ms-0">
-                <h3 class="mb-0 fw-semi-bold">Lifetime access</h3>
-                <p class="mb-0 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+           <!-- About Section -->
+          <div class="item col-lg-9 col-md-8 col-12 ">
+            <!-- Card -->
+            <div class="card mb-4 shadow-sm rounded">
+              <!-- Card Header -->
+              <div class="card-header">
+                <h2 class="mb-2 ">About Me</h2>
               </div>
+              <!-- Card Body -->
+              <div class="card-body">
+                <p class="mb-2 card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, vitae ullam. Voluptate asperiores veniam quisquam ipsa hic illum atque velit sed ratione, non, vero pariatur excepturi exercitationem aliquam voluptatem saepe corrupti nisi, id tempore laudantium obcaecati ipsam? Dolorum quae doloribus culpa molestiae. Eligendi reiciendis nulla quasi omnis aut! Ratione, deserunt similique excepturi quis consectetur esse tenetur nostrum. Modi expedita illo obcaecati fuga dolorem, natus eum cupiditate tempore laudantium aliquid harum nisi. Quasi, aliquid magni quisquam cupiditate nulla incidunt laboriosam possimus praesentium in dignissimos amet dolores obcaecati illo cumque, iure, et consequatur impedit. Ipsam amet a nisi veniam nemo aperiam incidunt.</p>
+                <p class="mb-2 card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vero, magni ab laudantium aut magnam eligendi inventore alias deserunt. Eos expedita et omnis, rem deleniti placeat animi architecto officiis alias vel dolore beatae inventore natus veritatis sit? Hic corrupti asperiores nostrum repudiandae blanditiis voluptates nobis ab molestiae alias, dignissimos aliquid eligendi iste ipsum dolorem praesentium illo, velit vel quae nemo repellat inventore quas reprehenderit exercitationem libero. Ea repudiandae ducimus non esse! Eaque voluptatum autem sapiente, ea, veniam molestias voluptatem suscipit, cum nobis asperiores quis repellendus inventore dolore minima odio vero perferendis sint! Maxime nesciunt officiis adipisci pariatur maiores exercitationem. Nulla fuga nemo animi neque molestias consequuntur similique soluta nisi tempora minus ipsum rerum labore voluptatibus ab sit voluptate amet illum facere quis doloribus earum, quas quo! Harum ipsa numquam laudantium facere nostrum optio rerum dignissimos. Cumque, alias numquam. Molestiae quasi quas, eaque ipsum atque laborum doloremque. Atque libero quia velit.</p>
+              </div>
+              <!-- Card Footer -->
+            
             </div>
-          </div>
-          </div>
+         
+          </div>      
         </div>
       </div>
-    </section>
-
-    <!-- Content -->
-    <section class="posts pt-lg-8 pb-lg-8 pt-sm-4 pb-sm-4"> 
-        <div class="container-lg">
-          <div class="row mb-4">
-            <div class="col">
-              <h2 class="display-3">Latest Posts</h2>
+        <!-- Modal Start -->
+        <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header ">
+                  <h4 class="modal-title ms-2" id="postModalLabel">Use this form to create a new post</h4>
+                  <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">               
+                  <div class="row">                       
+                      <div class="col-12">                           
+                        <h1 class="mb-2">Create post</h1>                         
+                        <form action="/" method="GET">                             
+                              <div class="form-group">
+                                  <label for="subject">Subject <span class="require">*</span></label>
+                                  <input type="text" class="form-control mb-4" name="subject"required/>
+                              </div>                             
+                              <div class="form-group">
+                                  <label for="description">Post Content <span class="require">*</span></label>
+                                  <textarea rows="5" class="form-control mb-4" name="description"required ></textarea>
+                              </div>
+                              <div class="modal-footer d-flex justify-content-start border-top-0 p-0">
+                                <button type="submit" class="btn btn-primary">Create Posts</button>
+                                <button type="submit" class="btn btn-link" data-bs-dismiss="modal">Cancel</button>
+                              </div>                             
+                        </form>
+                      </div>                     
+                  </div>            
+                </div>
+              </div>
             </div>
-          </div>
+        </div>
+        <!-- Modal End -->  
+    </section>
+    
+     <!-- Content -->
+    <section class="posts pt-0 pb-lg-8  pb-sm-4">
+        <div class="container-lg">     
           <div class="row">
-            <!-- Row Item-->
-            <div class="item col-4 col-md-4 col-12 order-last ">
+            <!-- Members and Teachers -->
+            <div class="item col-lg-4 col-md-4 col-12 order-last ">
               <div class="col-auto rounded shadow-sm">
                 <div class="scroll-item bg-white border-end border-top ">
                   <!-- Members Section -->
                   <div class=" members" >
-                    <div class="members-stiky-header sticky-top bg-white">
-                        <div class="px-4 py-4">
-                          <!-- Members Heading -->
-                          <div
-                            class="d-flex justify-content-between align-items-center flex-wrap gap-2">
-                            <h3 class="mb-0">Create a post</h3>
-                            <!-- Modal Button -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#postModal">
-                            Create Post
-                            </button>
-                          </div>     
+                      <div class="members-stiky-header sticky-top bg-white">
+                        <div class="px-4 py-4">                         
                           <!-- Search Members-->
+                          <h3 class="mb-0">Search your community</h3>
                           <div class="mt-4 mb-4">
                             <input
                               type="search"
-                              class="form-control form-control rounded"
-                              placeholder="Search members"
+                              class="form-control form-control-sm rounded"
+                              placeholder="Search members or teachers"
                             />
                           </div>
                           <!-- Members List -->
@@ -231,8 +335,8 @@
                               >Teachers</a>
                           </li>
                         </ul>
-                    </div>
-                    <div  data-simplebar style="height: 100vh; overflow: auto;">
+                      </div>
+                      <div  data-simplebar style="height: 100vh; overflow: auto;">
                         <!-- Tab Content -->
                         <div class="tab-content" id="tabContent">
                           <!-- Tab Members -->
@@ -1311,194 +1415,97 @@
                             </ul>
                           </div>
                         </div>
-                    </div>
-                   </div>
+                      </div>
+                  </div>
                 </div>
               </div>
 					  </div>
-            <!-- Row Item-->
-            <div class="item col-lg-8 col-md-8 col-12 ">
+             <!-- Edit Profile Details -->
+            <div class="col-lg-8 col-md-8 col-12">
               <!-- Card -->
-                <div class="card mb-4 shadow-sm rounded">
-                  <!-- Card Header -->
-                  <div class="card-header">
-                    <h3 class="mb-2 ">Life is short, smile while you still have teeth</h3>
-                  </div>
-                  <!-- Card Body -->
-                  <div class="card-body">
-                    <p class="mb-3 card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus magnam, iste cupiditate molestiae illo suscipit eum mollitia, exercitationem hic corporis dolorem quo nobis distinctio quis quod. Ea iure aut voluptatem.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                  </div>
-                  <!-- Card Footer -->
-                  <div class="card-footer">
-                    <div class="row d-flex gap-2 flex-wrap">
-                      <div class="col-auto d-flex align-items-center gap-2 ">
-                         <img
-                          src="/assets/avatars/img_me.jpg"
-                          class="rounded-circle avatar-sm"
-                          alt=""
-                        />
-                        <h4 class="mb-0">Robert D.B</h4>
-                      </div>
-                      <div class="col-auto d-flex align-items-center  ">
-                        <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/share-fill.svg"></img>
-                        </a>
-                         <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/heart.svg"></img>
-                        </a>
-                         <a href="/profile/" class="card-link small">
-                          See Profile
-                        </a>
+              <div class="card">
+                <!-- Card header -->
+                <div class="card-header">
+                  <h3 class="mb-0">Profile Details</h3>
+                  <p class="mb-0">
+                    Here you can edit your personal information.
+                  </p>
+                </div>
+                <!-- Card body -->
+                <div class="card-body">
+                  <div class="d-lg-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center flex-wrap gap-2 mb-4 mb-lg-0">
+                      <img src="/assets/avatars/img_me.jpg" id="img-uploaded" class="avatar-lg rounded-circle" alt="" />
+                      <div class="ms-lg-3 ms-0">
+                        <h4 class="mb-0">Your avatar</h4>
+                        <p class="mb-0">
+                          PNG or JPG, max 800px wide and tall.
+                        </p>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="card mb-4 shadow-sm rounded">
-                  <!-- Card Header -->
-                  <div class="card-header">
-                    <h3 class="mb-2 ">Whatever hits the fan will not be distributed evenly</h3>
-                  </div>
-                  <!-- Card Body -->
-                  <div class="card-body">
-                    <p class="mb-3 card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus magnam, iste cupiditate molestiae illo suscipit eum mollitia, exercitationem hic corporis dolorem quo nobis distinctio quis quod. Ea iure aut voluptatem.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                  </div>
-                  <!-- Card Footer -->
-                  <div class="card-footer">
-                    <div class="row d-flex gap-2 flex-wrap">
-                      <div class="col-auto d-flex align-items-center gap-2 ">
-                         <img
-                          src="/assets/avatars/img_me.jpg"
-                          class="rounded-circle avatar-sm"
-                          alt=""
-                        />
-                        <h4 class="mb-0">Robert D.B</h4>
-                      </div>
-                      <div class="col-auto d-flex align-items-center  ">
-                        <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/share-fill.svg"></img>
-                        </a>
-                         <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/heart.svg"></img>
-                        </a>
-                         <a href="/profile/" class="card-link small">
-                          See Profile
-                        </a>
-                      </div>
+                    <div>
+                      <a href="#" class="btn btn-outline-primary btn-sm">Update</a>
+                      <a href="#" class="btn btn-outline-danger btn-sm">Delete</a>
                     </div>
                   </div>
+                  <hr class="my-5" />
+                  <div>
+                    <h4 class="mb-0">Personal Details</h4>
+                    <p class="mb-4">
+                      Edit your personal information and address.
+                    </p>
+                    <!-- Form -->
+                    <form class="row">
+                      <!-- First name -->
+                      <div class="mb-3 col-12 col-md-6">
+                        <label class="form-label" for="fname">First Name</label>
+                        <input type="text" id="fname" class="form-control" placeholder="First Name" required />
+                      </div>
+                      <!-- Last name -->
+                      <div class="mb-3 col-12 col-md-6">
+                        <label class="form-label" for="lname">Last Name</label>
+                        <input type="text" id="lname" class="form-control" placeholder="Last Name" required />
+                      </div>
+                      <!-- Phone -->
+                      <div class="mb-3 col-12 col-md-6">
+                        <label class="form-label" for="phone">Phone</label>
+                        <input type="text" id="phone" class="form-control" placeholder="Phone" required />
+                      </div>
+                      <!-- Birthday -->
+                      <div class="mb-3 col-12 col-md-6">
+                        <label class="form-label" for="birth">Birthday</label>
+                        <input class="form-control flatpickr" type="text" placeholder="Birth of Date" id="birth"
+                          name="birth" />
+                      </div>
+                      <!-- Address -->
+                      <div class="mb-3 col-12 col-md-6">
+                        <label class="form-label" for="address">Address Line 1</label>
+                        <input type="text" id="address" class="form-control" placeholder="Address" required />
+                      </div>
+                      <!-- Address -->
+                      <div class="mb-3 col-12 col-md-6">
+                        <label class="form-label" for="address2">Address Line 2</label>
+                        <input type="text" id="address2" class="form-control" placeholder="Address" required />
+                      </div>
+                      <div class="form-group">
+                        <label for="description">Bio</label>
+                        <textarea rows="10" class="form-control mb-4" name="description"required ></textarea>
+                      </div>
+                      </div>
+                      <div class="col-12">
+                        <!-- Button -->
+                        <button class="btn btn-primary" type="submit">
+                          Update Profile
+                        </button>
+                      </div>
+                    </form>
                 </div>
-                <div class="card mb-4 shadow-sm rounded">
-                  <!-- Card Header -->
-                  <div class="card-header">
-                    <h3 class="mb-2 ">When nothing goes right……..go left</h3>
-                  </div>
-                  <!-- Card Body -->
-                  <div class="card-body">
-                    <p class="mb-3 card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus magnam, iste cupiditate molestiae illo suscipit eum mollitia, exercitationem hic corporis dolorem quo nobis distinctio quis quod. Ea iure aut voluptatem.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                  </div>
-                  <!-- Card Footer -->
-                  <div class="card-footer">
-                    <div class="row d-flex gap-2 flex-wrap">
-                      <div class="col-auto d-flex align-items-center gap-2 ">
-                         <img
-                          src="/assets/avatars/img_me.jpg"
-                          class="rounded-circle avatar-sm"
-                          alt=""
-                        />
-                        <h4 class="mb-0">Robert D.B</h4>
-                      </div>
-                      <div class="col-auto d-flex align-items-center  ">
-                        <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/share-fill.svg"></img>
-                        </a>
-                         <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/heart.svg"></img>
-                        </a>
-                         <a href="/profile/" class="card-link small">
-                          See Profile
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card mb-4 shadow-sm rounded">
-                  <!-- Card Header -->
-                  <div class="card-header">
-                    <h3 class="mb-2 ">On the other hand, you have different fingers</h3>
-                  </div>
-                  <!-- Card Body -->
-                  <div class="card-body">
-                    <p class="mb-3 card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus magnam, iste cupiditate molestiae illo suscipit eum mollitia, exercitationem hic corporis dolorem quo nobis distinctio quis quod. Ea iure aut voluptatem.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                  </div>
-                  <!-- Card Footer -->
-                  <div class="card-footer">
-                    <div class="row d-flex gap-2 flex-wrap">
-                      <div class="col-auto d-flex align-items-center gap-2 ">
-                         <img
-                          src="/assets/avatars/img_me.jpg"
-                          class="rounded-circle avatar-sm"
-                          alt=""
-                        />
-                        <h4 class="mb-0">Robert D.B</h4>
-                      </div>
-                      <div class="col-auto d-flex align-items-center  ">
-                        <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/share-fill.svg"></img>
-                        </a>
-                         <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/heart.svg"></img>
-                        </a>
-                         <a href="/profile/" class="card-link small">
-                          See Profile
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card mb-4 shadow-sm rounded">
-                  <!-- Card Header -->
-                  <div class="card-header">
-                    <h3 class="mb-2 ">Your mouth is a key of your health</h3>
-                  </div>
-                  <!-- Card Body -->
-                  <div class="card-body">
-                    <p class="mb-3 card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus magnam, iste cupiditate molestiae illo suscipit eum mollitia, exercitationem hic corporis dolorem quo nobis distinctio quis quod. Ea iure aut voluptatem.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                  </div>
-                  <!-- Card Footer -->
-                  <div class="card-footer">
-                    <div class="row d-flex gap-2 flex-wrap">
-                      <div class="col-auto d-flex align-items-center gap-2 ">
-                         <img
-                          src="/assets/avatars/img_me.jpg"
-                          class="rounded-circle avatar-sm"
-                          alt=""
-                        />
-                        <h4 class="mb-0">Robert D.B</h4>
-                      </div>
-                      <div class="col-auto d-flex align-items-center  ">
-                        <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/share-fill.svg"></img>
-                        </a>
-                         <a href="#" class="card-footer-icons">
-                          <img src="/assets/svg/heart.svg"></img>
-                        </a>
-                         <a href="/profile/" class="card-link small">
-                          See Profile
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              </div>
             </div>
-          </div>
-        </div> 
-        <!-- Modal Start -->
-        <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+            </div>
+          </div> 
+          <!-- Modal Start -->
+          <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header ">
@@ -1528,12 +1535,12 @@
                 </div>
               </div>
             </div>
+          </div>
+          <!-- Modal End -->        
         </div>
-        <!-- Modal End -->        
-      </div>  
     </section>
 
-    <!-- footer -->
+    <!-- Footer -->
     <footer class="footer bg-white mt-lg-8 mt-md-4">
       <div class="container-lg">
 
@@ -1549,7 +1556,6 @@
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur qui numquam suscipit corporis enim. Unde suscipit nemo odio quis iure.
                 </p>
               </div>
-           
           </div>
         </div>
            <!-- Footer Bottom-->
@@ -1567,3 +1573,14 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
